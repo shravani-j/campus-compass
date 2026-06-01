@@ -586,6 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
             doc.text("• Prachurya - workshops, innovation, bootcamps", 25, y);
             y += 8;
             doc.text("• Avisruta - sports and athletics", 25, y);
+            y += 20;
             doc.text("Senior Contacts", 20, y);
 
             y += 10;
