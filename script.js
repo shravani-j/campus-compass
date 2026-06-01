@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconLight = themeToggleBtn.querySelector('.icon-light');
 
     // Retrieve saved theme preference or use system default
-    const savedTheme = localStorage.getItem('theme') || 
-                       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const savedTheme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
     // Apply initial theme
     setTheme(savedTheme);
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-        
+
         if (theme === 'dark') {
             iconDark.style.display = 'none';
             iconLight.style.display = 'block';
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileMenuToggle.addEventListener('click', () => {
         const isOpen = navMenu.classList.toggle('mobile-open');
-        
+
         if (isOpen) {
             iconOpen.style.display = 'none';
             iconClose.style.display = 'block';
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-        
+
         scrollProgress.style.width = `${scrollPercent}%`;
 
         // Add class to header when scrolled past threshold
@@ -86,15 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. Scrollspy - Highlight Active Section in Navbar
     const sections = document.querySelectorAll('section[id]');
-    
+
     function scrollspy() {
         const scrollY = window.pageYOffset;
-        
+
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 120; // accounting for sticky header height
             const sectionId = current.getAttribute('id');
-            
+
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 document.querySelector(`.nav-link[href*=${sectionId}]`)?.classList.add('active');
             } else {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
+
     window.addEventListener('scroll', scrollspy);
 
     // 6. First Month Timeline Toggles
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             step.classList.add('active');
 
             const week = step.getAttribute('data-week');
-            
+
             // Hide all panes
             timelinePanes.forEach(pane => pane.classList.remove('active'));
             // Show corresponding pane
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quizResetBtn.addEventListener('click', () => {
         quizAnswers = [];
         quizResult.style.display = 'none';
-        
+
         // Reset all questions display
         quizSlides.forEach((slide, idx) => {
             slide.style.display = idx === 0 ? 'block' : 'none';
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showQuizResults() {
         quizResult.style.display = 'block';
-        
+
         const primaryInterest = quizAnswers[0];
         const secondaryInterest = quizAnswers[1];
 
@@ -483,9 +483,135 @@ document.addEventListener('DOMContentLoaded', () => {
                 iconOpen.style.display = 'block';
                 iconClose.style.display = 'none';
             }
-            
+
             // Trigger native print dialog
-            window.print();
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            let y = 20;
+
+            doc.setFontSize(22);
+            doc.text("Campus Compass", 20, y);
+
+            y += 15;
+            doc.setFontSize(12);
+            doc.text("A quick guide for freshers at Amrita Amaravati.", 20, y);
+
+            y += 20;
+            doc.setFontSize(16);
+            doc.text("Week 1", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("• Attend orientation", 25, y);
+            y += 8;
+            doc.text("• Save important contacts", 25, y);
+            y += 8;
+            doc.text("• Locate your classrooms", 25, y);
+            y += 8;
+            doc.text("• Don't stress about clubs immediately", 25, y);
+
+            y += 20;
+            doc.setFontSize(16);
+            doc.text("Academics", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("• Aim for a strong CGPA from Semester 1", 25, y);
+            y += 8;
+            doc.text("• Start DSA early", 25, y);
+            y += 8;
+            doc.text("• Build depth before chasing many topics", 25, y);
+            y += 8;
+            doc.text("• Learn Git and GitHub", 25, y);
+            y += 12;
+            doc.setFontSize(16);
+            doc.text("Academic Survival Tips", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("• Prioritize high-credit courses", 25, y);
+            y += 8;
+            doc.text("• Treat assignments and internals as free marks", 25, y);
+            y += 8;
+            doc.text("• Practice previous year papers before exams", 25, y);
+            y += 8;
+            doc.text("• Consistency beats last-minute preparation", 25, y);
+            y += 8;
+            doc.text("• Build strong notes from Semester 1", 25, y);
+            doc.addPage();
+
+            y = 20;
+            doc.setFontSize(16);
+            doc.text("Hostel Life", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("• Apply for passes 24 hours in advance", 25, y);
+            y += 8;
+            doc.text("• Curfew is typically 8:30 PM", 25, y);
+            y += 8;
+            doc.text("• Gym facility available", 25, y);
+            y += 8;
+            doc.text("• Swipe while exiting and entering", 25, y);
+            y += 15;
+            doc.setFontSize(16);
+            doc.text("Hostel Essentials", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("• Never forget your ID card", 25, y);
+            y += 8;
+            doc.text("• Apply for passes at least 24 hours early", 25, y);
+            y += 8;
+            doc.text("• Keep an extension board in your room", 25, y);
+            y += 8;
+            doc.text("• Save important faculty and warden contacts", 25, y);
+            y += 8;
+            doc.text("• Gym facility available for hostellers", 25, y);
+            y += 20;
+            doc.setFontSize(16);
+            y += 15;
+            doc.setFontSize(16);
+            doc.text("Clubs & Activities", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("• Join 1-2 clubs that genuinely interest you", 25, y);
+            y += 8;
+            doc.text("• Talent Search is used for club recruitment", 25, y);
+            y += 8;
+            doc.text("• Chakravyuha - coding, hackathons, problem solving", 25, y);
+            y += 8;
+            doc.text("• Prachurya - workshops, innovation, bootcamps", 25, y);
+            y += 8;
+            doc.text("• Avisruta - sports and athletics", 25, y);
+            doc.text("Senior Contacts", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("Kollipara VMK Mithra", 25, y);
+            y += 8;
+            doc.text("+91 70320 69306", 25, y);
+
+            y += 15;
+            doc.text("Medha Ganti", 25, y);
+            y += 8;
+            doc.text("+91 83174 58811", 25, y);
+            y += 20;
+
+            doc.setFontSize(16);
+            doc.text("One Final Piece of Advice", 20, y);
+
+            y += 10;
+            doc.setFontSize(11);
+            doc.text("Don't try to learn everything at once.", 25, y);
+            y += 8;
+            doc.text("Build a strong foundation in one area first.", 25, y);
+            y += 8;
+            doc.text("Stay consistent, attend classes, and enjoy college.", 25, y);
+
+            doc.save("CampusCompass-Freshers-Guide.pdf");
         });
     });
 });
