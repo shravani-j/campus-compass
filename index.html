@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Compass — Freshers Guide to Amrita Amaravati (Batch of 2026)</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="A warm, student-made guide for incoming B.Tech freshers joining Amrita Vishwa Vidyapeetham, Amaravati in July 2026. Get advice on academics, clubs, hostel life, and survival tips from your seniors.">
+    <meta name="keywords"
+        content="Amrita Amaravati, Amrita Vishwa Vidyapeetham Amaravati, Freshers Guide, Amrita Amaravati Clubs, Amrita Academics, Chakravyuha, B.Tech Freshers, College Survival Guide">
+    <meta name="author" content="Your Senior Community">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+
+    <!-- Sticky Navigation Header -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <span class="logo-compass"><i data-lucide="compass"></i></span>
+                <span class="logo-text">Campus Compass</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu" class="icon-open"></i>
+                <i data-lucide="x" class="icon-close" style="display: none;"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#academics" class="nav-link">Academic Life</a></li>
+                    <li><a href="#clubs" class="nav-link">Clubs</a></li>
+                    <li><a href="#campus-hostel" class="nav-link">Campus & Hostel</a></li>
+                    <li><a href="#survival-kit" class="nav-link">Survival Kit</a></li>
+                    <li><a href="#resources" class="nav-link">Resources</a></li>
+                    <li><a href="#faq" class="nav-link">FAQs</a></li>
+                </ul>
+            </nav>
+
+            <!-- Theme Toggle & Print Actions -->
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme"
+                    aria-label="Toggle light and dark mode">
+                    <i data-lucide="moon" class="icon-dark"></i>
+                    <i data-lucide="sun" class="icon-light" style="display: none;"></i>
+                </button>
+                <button class="btn-pdf-header print-btn" id="pdf-download-header" title="Print Booklet Guide">
+                    <i data-lucide="download"></i> <span class="hide-mobile">PDF Guide</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">For the Class of 2030</div>
+                        <h1 class="hero-title">What I wish I knew on<br><span class="highlight-text">Day 1</span></h1>
+
+                        <div class="hero-subtitle">
+                            <p>Right now everything probably feels unfamiliar.</p>
+                            <p>New place. New people. New routines.</p>
+                            <p class="highlight-p">Think of this as a guide from a senior who's been there.</p>
+                            <p class="hero-description">Everything I wish I knew before my first day — from academics
+                                and hostel life to clubs, internals, and making the most of college.</p>
+                        </div>
+
+                        <div class="hero-cta-group">
+                            <a href="#home" class="btn btn-primary">Start Exploring &rarr;</a>
+                            <a href="#faq" class="btn btn-secondary">Have Questions?</a>
+                        </div>
+
+                        <p class="hero-signature">
+                            Amrita Vishwa Vidyapeetham · Amaravati Campus
+                        </p>
+
+                    </div>
+
+                    <div class="hero-illustration">
+                        <svg viewBox="0 0 600 350" width="100%" height="100%" class="svg-campus-photo-doodle"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Grid Lines mimicking student notebook -->
+                            <line x1="0" y1="30" x2="600" y2="30" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="70" x2="600" y2="70" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="110" x2="600" y2="110" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="150" x2="600" y2="150" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="190" x2="600" y2="190" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="230" x2="600" y2="230" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="270" x2="600" y2="270" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="0" y1="310" x2="600" y2="310" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+
+                            <line x1="50" y1="0" x2="50" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="110" y1="0" x2="110" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="170" y1="0" x2="170" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="230" y1="0" x2="230" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="290" y1="0" x2="290" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="350" y1="0" x2="350" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="410" y1="0" x2="410" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="470" y1="0" x2="470" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+                            <line x1="530" y1="0" x2="530" y2="350" stroke="rgba(30, 58, 138, 0.03)" stroke-width="1" />
+
+                            <!-- Sky Sun -->
+                            <circle cx="510" cy="80" r="30" fill="none" stroke="var(--accent-color)" stroke-width="2.5"
+                                stroke-dasharray="6,4" class="svg-sun" />
+                            <circle cx="510" cy="80" r="8" fill="var(--accent-color)" />
+
+                            <!-- Wing left structural box (Angled building wing) -->
+                            <polygon points="60,115 240,135 240,215 60,195" fill="var(--accent-light)"
+                                stroke="var(--text-color)" stroke-width="3" stroke-linejoin="round" class="svg-path" />
+                            <!-- Wing left vertical window lines -->
+                            <line x1="90" y1="118" x2="90" y2="198" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="120" y1="121" x2="120" y2="201" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="150" y1="125" x2="150" y2="205" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="180" y1="128" x2="180" y2="208" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="210" y1="131" x2="210" y2="211" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+
+                            <!-- Wing right structural box (Angled building wing) -->
+                            <polygon points="540,115 360,135 360,215 540,195" fill="var(--accent-light)"
+                                stroke="var(--text-color)" stroke-width="3" stroke-linejoin="round" class="svg-path" />
+                            <!-- Wing right vertical window lines -->
+                            <line x1="510" y1="118" x2="510" y2="198" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="480" y1="121" x2="480" y2="201" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="450" y1="125" x2="450" y2="205" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="420" y1="128" x2="420" y2="208" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+                            <line x1="390" y1="131" x2="390" y2="211" stroke="var(--text-color)" stroke-width="2"
+                                stroke-dasharray="8,4" />
+
+                            <!-- Central Gate Tower (Concrete facade) -->
+                            <polygon points="240,135 360,135 360,215 240,215" fill="var(--card-bg)"
+                                stroke="var(--text-color)" stroke-width="3" stroke-linejoin="round" class="svg-path" />
+                            <polygon points="230,95 370,95 360,135 240,135" fill="var(--card-bg)"
+                                stroke="var(--text-color)" stroke-width="3" stroke-linejoin="round" class="svg-path" />
+
+                            <!-- Logo text matching the photo -->
+                            <text x="300" y="112" font-family="var(--font-heading)" font-weight="700" font-size="8.5"
+                                fill="var(--primary-color)" text-anchor="middle" letter-spacing="1">AMRITA</text>
+                            <text x="300" y="121" font-family="var(--font-heading)" font-size="4.5"
+                                fill="var(--text-muted)" text-anchor="middle" letter-spacing="0.5">VISHWA
+                                VIDYAPEETHAM</text>
+                            <line x1="270" y1="126" x2="330" y2="126" stroke="var(--border-color)" stroke-width="1" />
+
+                            <!-- Glass arch entrance -->
+                            <rect x="270" y="160" width="60" height="55" rx="3" fill="var(--primary-light)"
+                                stroke="var(--text-color)" stroke-width="2.5" />
+                            <line x1="300" y1="160" x2="300" y2="215" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="270" y1="188" x2="330" y2="188" stroke="var(--text-color)" stroke-width="1.5" />
+
+                            <!-- Courtyard steps -->
+                            <polygon points="220,215 380,215 410,240 190,240" fill="var(--bg-color)"
+                                stroke="var(--text-color)" stroke-width="2.5" />
+                            <line x1="210" y1="223" x2="390" y2="223" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="200" y1="231" x2="400" y2="231" stroke="var(--text-color)" stroke-width="1.5" />
+
+                            <!-- Courtyard Lawn paths -->
+                            <path d="M 50,330 C 150,230 450,230 550,330" fill="none" stroke="rgba(21, 128, 61, 0.15)"
+                                stroke-width="40" />
+
+                            <!-- Cylindrical Terracotta Gazebos from the photo -->
+                            <!-- Gazebo 1 Left -->
+                            <ellipse cx="230" cy="275" rx="16" ry="7" fill="none" stroke="var(--text-color)"
+                                stroke-width="2" />
+                            <line x1="214" y1="275" x2="214" y2="290" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="222" y1="278" x2="222" y2="293" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="230" y1="280" x2="230" y2="295" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="238" y1="278" x2="238" y2="293" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="246" y1="275" x2="246" y2="290" stroke="var(--text-color)" stroke-width="1.5" />
+                            <ellipse cx="230" cy="290" rx="16" ry="7" fill="none" stroke="var(--text-color)"
+                                stroke-width="2" />
+
+                            <!-- Gazebo 2 Right -->
+                            <ellipse cx="370" cy="275" rx="16" ry="7" fill="none" stroke="var(--text-color)"
+                                stroke-width="2" />
+                            <line x1="354" y1="275" x2="354" y2="290" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="362" y1="278" x2="362" y2="293" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="370" y1="280" x2="370" y2="295" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="378" y1="278" x2="378" y2="293" stroke="var(--text-color)" stroke-width="1.5" />
+                            <line x1="386" y1="275" x2="386" y2="290" stroke="var(--text-color)" stroke-width="1.5" />
+                            <ellipse cx="370" cy="290" rx="16" ry="7" fill="none" stroke="var(--text-color)"
+                                stroke-width="2" />
+
+                            <!-- Concentric walk path arches -->
+                            <path d="M 120,315 A 180,75 0 0,0 480,315" fill="none" stroke="var(--accent-color)"
+                                stroke-width="4.5" stroke-dasharray="12,6" class="svg-path-swirl" />
+                            <path d="M 160,325 A 140,55 0 0,0 440,325" fill="none" stroke="var(--text-color)"
+                                stroke-width="2" />
+
+                            <!-- Central Pond -->
+                            <ellipse cx="300" cy="320" rx="45" ry="16" fill="var(--primary-light)"
+                                stroke="var(--text-color)" stroke-width="2.5" />
+                            <ellipse cx="300" cy="320" rx="30" ry="10" fill="none" stroke="var(--primary-color)"
+                                stroke-width="1.5" class="svg-ripple-1" />
+                            <ellipse cx="300" cy="320" rx="12" ry="4" fill="none" stroke="var(--primary-color)"
+                                stroke-width="1.5" class="svg-ripple-2" />
+
+                            <!-- Trees -->
+                            <path d="M 40,240 Q 30,210 45,200 Q 60,190 55,215 Q 50,240 40,240 Z"
+                                fill="rgba(21, 128, 61, 0.1)" stroke="var(--text-color)" stroke-width="2" />
+                            <line x1="45" y1="225" x2="45" y2="245" stroke="var(--text-color)" stroke-width="2" />
+
+                            <path d="M 140,255 Q 130,230 145,220 Q 160,210 155,235 Q 150,255 140,255 Z"
+                                fill="rgba(21, 128, 61, 0.1)" stroke="var(--text-color)" stroke-width="2" />
+                            <line x1="145" y1="240" x2="145" y2="258" stroke="var(--text-color)" stroke-width="2" />
+
+                            <path d="M 550,230 Q 540,200 555,190 Q 570,180 565,205 Q 560,230 550,230 Z"
+                                fill="rgba(21, 128, 61, 0.1)" stroke="var(--text-color)" stroke-width="2" />
+                            <line x1="555" y1="215" x2="555" y2="235" stroke="var(--text-color)" stroke-width="2" />
+
+                            <!-- Sketched cars -->
+                            <rect x="90" y="248" width="18" height="7" rx="2" fill="var(--card-bg)"
+                                stroke="var(--text-color)" stroke-width="1.5" />
+                            <circle cx="94" cy="255" r="2.2" fill="var(--text-color)" />
+                            <circle cx="104" cy="255" r="2.2" fill="var(--text-color)" />
+
+                            <rect x="480" y="248" width="18" height="7" rx="2" fill="var(--card-bg)"
+                                stroke="var(--text-color)" stroke-width="1.5" />
+                            <circle cx="484" cy="255" r="2.2" fill="var(--text-color)" />
+                            <circle cx="494" cy="255" r="2.2" fill="var(--text-color)" />
+
+
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1 — HOME -->
+        <section class="section home-section" id="home">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01 / Overview</span>
+                    <h2 class="section-title">The Lay of the Land</h2>
+                    <p class="section-intro">College is a marathon, not a sprint. Here is a high-level roadmap of what
+                        we've compiled for you and what your first few weeks will look like.</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <!-- Guide coverage card -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">What this guide covers</h3>
+                            <p class="card-desc">No sugarcoated corporate brochures here. Only direct, honest student
+                                advice about:</p>
+                            <ul class="styled-list">
+                                <li>
+                                    <span class="list-icon"><i data-lucide="book-open"></i></span>
+                                    <div><strong>Academics:</strong> B.Tech branches, actual class schedules, passing
+                                        criteria, and SGPA strategies.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon"><i data-lucide="users"></i></span>
+                                    <div><strong>Clubs:</strong> Tech, sports, and cultural clubs and how to actually
+                                        get selected.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon"><i data-lucide="home"></i></span>
+                                    <div><strong>Hostel & Campus:</strong> Daily schedules, a realistic packing list,
+                                        and transport guidance.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon"><i data-lucide="shield-alert"></i></span>
+                                    <div><strong>Survival Kit:</strong> Time management, mental health, and the biggest
+                                        mistakes to avoid.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon"><i data-lucide="cpu"></i></span>
+                                    <div><strong>Tools & Apps:</strong> The exact learning platforms, notes, and
+                                        productivity apps you need.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Interactive First Month Timeline -->
+                    <div class="card card-timeline">
+                        <div class="card-body">
+                            <h3 class="card-title">First Month Timeline</h3>
+                            <p class="card-desc text-muted">Click on each week to see what to expect and your key
+                                survival objective.</p>
+
+                            <div class="timeline-interactive">
+                                <div class="timeline-steps">
+                                    <button class="timeline-step active" data-week="1">
+                                        <span class="step-num">W1</span>
+                                        <span class="step-label">Orientation</span>
+                                    </button>
+                                    <button class="timeline-step" data-week="2">
+                                        <span class="step-num">W2</span>
+                                        <span class="step-label">Classes</span>
+                                    </button>
+                                    <button class="timeline-step" data-week="3">
+                                        <span class="step-num">W3</span>
+                                        <span class="step-label">Clubs</span>
+                                    </button>
+                                    <button class="timeline-step" data-week="4">
+                                        <span class="step-num">W4</span>
+                                        <span class="step-label">Reality</span>
+                                    </button>
+                                </div>
+
+                                <div class="timeline-details-box">
+                                    <div class="timeline-content-pane active" id="pane-week-1">
+                                        <h4>Week 1: Orientation & Settling In</h4>
+                                        <p>You'll arrive, get your hostel room, and sit through long speeches in the
+                                            auditorium. Everything will feel overwhelming and crowded.</p>
+                                        <div class="senior-tip-box">
+                                            <span class="tip-title">Senior Objective:</span>
+                                            <p>Just get comfortable. Find out where your classrooms are, save your
+                                                hostel warden's number, and introduce yourself to the person sitting
+                                                next to you.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content-pane" id="pane-week-2">
+                                        <h4>Week 2: Classes Begin</h4>
+                                        <p>The academic routine kicks in. Labs start, textbooks/slides are introduced,
+                                            and teachers outline their course objectives and policies.</p>
+                                        <div class="senior-tip-box">
+                                            <span class="tip-title">Senior Objective:</span>
+                                            <p>Figure out the lab schedule. Buy an extension box if you haven't. Get
+                                                into the habit of waking up early enough to catch breakfast before 8:45
+                                                AM.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content-pane" id="pane-week-3">
+                                        <h4>Week 3: Club Exposure</h4>
+                                        <p>Clubs start advertising, putting up booths, and calling for registrations.
+                                            Senior interactions pick up pace.</p>
+                                        <div class="senior-tip-box">
+                                            <span class="tip-title">Senior Objective:</span>
+                                            <p>Register for clubs you like. Don't worry about skills yet; clubs look for
+                                                enthusiasm, curiosity, and willingness to learn. Attend the info
+                                                sessions!</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content-pane" id="pane-week-4">
+                                        <h4>Week 4: First Reality Check :)</h4>
+                                        <p>Assignments start piling up, and the first set of class tests or quizzes
+                                            might be announced. The honeymoon phase ends.</p>
+                                        <div class="senior-tip-box">
+                                            <span class="tip-title">Senior Objective:</span>
+                                            <p>Keep track of submissions on a calendar. Ensure your attendance is
+                                                healthy (75%+). Do not start falling behind now, it accumulates fast!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Preview Link -->
+                <div class="home-faq-preview mt-4">
+                    <p class="text-center text-muted">
+                        Anxious about attendance, making friends, or CGPA? Check the <a href="#faq"
+                            class="anchor-link">FAQ section below</a> for quick senior answers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2 — ACADEMIC LIFE -->
+        <section class="section section-alt academics-section" id="academics">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02 / Academics</span>
+                    <h2 class="section-title">Academics: Study smart, not scared.</h2>
+                    <p class="section-intro">Let's demystify branches, grading structures, class timetables, and
+                        attendance. It's not rocket science, but if you ignore the basics, it catches up quickly.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- B.Tech Branches -->
+                    <div class="card card-main col-span-2">
+                        <div class="card-body">
+                            <h3 class="card-title">B.Tech Branches at Amaravati</h3>
+                            <p class="card-desc">Here are the main branches you guys are enrolled in. The first year
+                                curriculum is largely shared, but your specialization defines your core lab courses
+                                later.</p>
+
+                            <div class="grid grid-2 gap-small mt-3">
+                                <div class="branch-pill">
+                                    <span class="branch-icon"><i data-lucide="terminal"></i></span>
+                                    <div>
+                                        <h4>Computer Science (Core)</h4>
+                                        <p>Focuses on computer architecture, systems, databases, and general software
+                                            development.</p>
+                                    </div>
+                                </div>
+                                <div class="branch-pill">
+                                    <span class="branch-icon"><i data-lucide="brain-circuit"></i></span>
+                                    <div>
+                                        <h4>AI & Machine Learning</h4>
+                                        <p>Heavy emphasis on mathematics, algorithms, data modeling, and neural
+                                            networks.</p>
+                                    </div>
+                                </div>
+                                <div class="branch-pill">
+                                    <span class="branch-icon"><i data-lucide="network"></i></span>
+                                    <div>
+                                        <h4>Computer Communication</h4>
+                                        <p>Blends networks, communication systems, cloud infrastructures, and system
+                                            protocols.</p>
+                                    </div>
+                                </div>
+                                <div class="branch-pill">
+                                    <span class="branch-icon"><i data-lucide="database"></i></span>
+                                    <div>
+                                        <h4>AI & Data Science</h4>
+                                        <p>Focuses on analyzing complex data, statistics, visual modeling, and pipeline
+                                            development.</p>
+                                    </div>
+                                </div>
+                                <div class="branch-pill">
+                                    <span class="branch-icon"><i data-lucide="database"></i></span>
+                                    <div>
+                                        <h4>CSE (Quantum Computing)</h4>
+                                        <p>A specialized program combining core computer science with quantum computing,
+                                            quantum algorithms, and emerging technologies.</p>
+                                    </div>
+                                </div>
+                                <div class="branch-pill">
+                                    <span class="branch-icon"><i data-lucide="database"></i></span>
+                                    <div>
+                                        <h4>Electronics and Communication Engineering</h4>
+                                        <p>Focuses on electronics, communication systems, embedded devices, signal
+                                            processing, and hardware-software integration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Classes & Timings -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">Timings & Routines</h3>
+                            <p class="card-desc">Classes generally begin promptly at <strong>8:55 AM</strong>. Keep this
+                                in mind when scheduling alarm clocks!</p>
+                            <ul class="bullet-list mt-3">
+                                <li><strong>End Times:</strong> May vary daily. Some days you might finish at 2:00 PM,
+                                    others at 3:00 PM, 4:00 PM, or sometimes 5:00 PM.</li>
+                                <li><strong>Labs:</strong> There is generally one lab session (typically lasting 2-3
+                                    hours) almost every day. Don't skip these; labs carry high internal marks.</li>
+                                <li><strong>Breaks:</strong> Lunch breaks are typically 1 hour, staggered depending on
+                                    your branch section.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-2 mt-4">
+                    <!-- Attendance Card -->
+                    <div class="card card-warning">
+                        <div class="card-body">
+                            <h3 class="card-title"><span class="badge badge-error">Crucial</span> Will I survive
+                                attendance?</h3>
+                            <p class="card-desc">Amrita is strict about this. A minimum of <strong>75%
+                                    attendance</strong> is mandatory for every single course.</p>
+
+                            <h4 class="mt-3">Why it actually matters:</h4>
+                            <ul class="styled-list">
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="alert-octagon"></i></span>
+                                    <div><strong>Exam Eligibility:</strong> If your attendance drops below 75%, you will
+                                        be barred from writing the End Semester Exam (ESE) for that course. No
+                                        exceptions.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="shield-x"></i></span>
+                                    <div><strong>Outpass Approval:</strong> Low attendance can make warden/hostel office
+                                        reject your homepass/outpass approvals. They track your class presence closely.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="user-x"></i></span>
+                                    <div><strong>Overall Discipline:</strong> Regular attendance builds a rapport with
+                                        faculty, which goes a long way when requesting help later.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exam & CGPA Advice -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">CIA + ESE Structure</h3>
+                            <p class="card-desc">Your grade in a subject is divided between continuous assessment and
+                                the final exam.</p>
+
+                            <div class="exam-pattern-grid mt-3">
+                                <div class="exam-part">
+                                    <h4>CIA (Continuous Internal Assessment)</h4>
+                                    <p>Typically 50% of your total marks. Includes assignments, class tests (Internals),
+                                        lab practicals, quizzes, and class participation.</p>
+                                    <div class="tag tag-info">Treat internals as free marks!</div>
+                                </div>
+                                <div class="exam-part">
+                                    <h4>ESE (End Semester Examination)</h4>
+                                    <p>Typically 50% of total marks. A comprehensive exam covering the full syllabus,
+                                        sometimes including separate lab exams.</p>
+                                    <div class="tag tag-success">50 or 100 mark exams</div>
+                                </div>
+                            </div>
+
+                            <div class="note-box mt-3">
+                                <strong>Relative Grading Note:</strong> SGPA is calculated relatively. Your grade
+                                depends on your performance compared to the rest of the batch. If the paper is tough,
+                                it's tough for everyone!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CGPA Advice & Golden Senior Tips -->
+                <div class="card card-editorial mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Your CGPA matters. But it is not your personality.</h3>
+                        <p class="card-desc">Maintaining a healthy CGPA keeps options open for placements, master's
+                            programs, and research. Here is the realistic target and how to achieve it.</p>
+
+                        <div class="grid grid-3 gap-medium mt-3">
+                            <div class="advice-block highlight-border">
+                                <span class="advice-icon"><i data-lucide="target"></i></span>
+                                <h4>Target: 8.5+ CGPA</h4>
+                                <p>This keeps you in the top bracket, makes you eligible for any recruitment drive, and
+                                    leaves a buffer for tougher upper-year courses.</p>
+                            </div>
+                            <div class="advice-block">
+                                <span class="advice-icon"><i data-lucide="zap"></i></span>
+                                <h4>Treat Internals as Gold</h4>
+                                <p>It is much easier to score 45/50 in internals (assignments + tests) than to salvage a
+                                    grade by studying all night for a 100-mark final.</p>
+                            </div>
+                            <div class="advice-block">
+                                <span class="advice-icon"><i data-lucide="users-2"></i></span>
+                                <h4>Ask Seniors & PYQs</h4>
+                                <p>Previous Year Questions (PYQs) are cheat codes. Professors often repeat question
+                                    formats. Ask seniors for notes and resources.</p>
+                            </div>
+                        </div>
+
+                        <!-- Handwritten Golden Advice Card -->
+                        <div class="senior-handwritten-card mt-4">
+                            <div class="handwritten-title">Personal Advice:</div>
+                            <p class="handwritten font-large">
+                                Score well in the first four semesters. It builds a solid foundation. In later
+                                semesters, project loads, internships, and club activities demand heavy attention,
+                                making it much harder to pull up a low CGPA. Do not slack in year one!
+                            </p>
+                        </div>
+
+                        <div class="cgpa-footer-note mt-3">
+                            <p class="text-center font-semibold">But please don't make CGPA your entire identity.</p>
+                            <p class="text-center text-muted font-small">Stay active. Play. Dance. Code. Compete. Write.
+                                Show up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 — CLUBS & EXTRACURRICULARS -->
+        <section class="section clubs-section" id="clubs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03 / Extracurriculars</span>
+                    <h2 class="section-title">Clubs: Where college becomes memorable.</h2>
+                    <p class="section-intro">Clubs are where you'll meet your people, learn new skills, and make some of
+                        your best college memories.</p>
+                </div>
+
+                <!-- Club Showcase -->
+                <div class="grid grid-3">
+                    <!-- Tech Clubs -->
+                    <div class="card card-editorial col-span-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Major Clubs</h3>
+                            <div class="grid grid-2 gap-medium mt-3">
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-tech">Technical</div>
+                                    <h4>Chakravyuha</h4>
+                                    <p>Problem-solving, competitive coding, hackathons, and core developer exposure.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-tech">Technical</div>
+                                    <h4>IEEE</h4>
+                                    <p>A community of thinkers passionate about advancing humanity through technology,
+                                        projects, and shared technical learning.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-tech">AI & Logic</div>
+                                    <h4>ReLU</h4>
+                                    <p>Refining Logic and Unleashing AI through machine learning, deep learning, and
+                                        algorithmic problem-solving practice.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-tech">Robotics</div>
+                                    <h4>Robotics Club - AVV Amaravati</h4>
+                                    <p>A student-run club for building, experimenting with, and innovating future
+                                        robotics technologies.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-tech">Technical & Cultural</div>
+                                    <h4>Prachurya</h4>
+                                    <p>Focused on innovation, technical workshops, hands-on coding, and creative digital
+                                        events.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-sports">Sports</div>
+                                    <h4>Avisruta</h4>
+                                    <p>The sports umbrella. Includes: Basketball, Football, Volleyball, Track & Field,
+                                        Badminton, Throwball, Chess, Carroms, Table Tennis.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-cultural">Music</div>
+                                    <h4>Saptaswara</h4>
+                                    <p>The musical soul of the campus. Includes instrumentalists, vocalists, and fun
+                                        events</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-cultural">Literary & Creative</div>
+                                    <h4>Avinya</h4>
+                                    <p>Literary events, poetry slams, debates, and creative
+                                        expression workshops.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-cultural">Multimedia & Arts</div>
+                                    <h4>Drishya</h4>
+                                    <p>The official multimedia and arts club, covering poster design, scriptwriting,
+                                        video editing, music production, drama, and stage events.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-cultural">Dance</div>
+                                    <h4>Nrityasparsh</h4>
+                                    <p>Choreography, classical and modern dance practices, and representing the college
+                                        in various fests.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-cultural">Fine Arts</div>
+                                    <h4>Advika</h4>
+                                    <p>Visual arts, sketching, painting, crafts, set designs for events, and art
+                                        galleries.</p>
+                                </div>
+                                <div class="club-card-item">
+                                    <div class="club-badge badge-sports">Environment</div>
+                                    <h4>Swachh Amrita</h4>
+                                    <p>An environmental and cleanliness initiative focused on keeping the
+                                        campus responsible, aware, and active.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Joining Process & Info -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">How to Join & Why it Matters</h3>
+
+                            <div class="joining-steps mt-3">
+                                <div class="step-line"></div>
+                                <div class="join-step">
+                                    <span class="step-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <div>
+                                        <h5>1. Registrations</h5>
+                                        <p>During the first month, clubs release online forms via college channels.</p>
+                                    </div>
+                                </div>
+                                <div class="join-step">
+                                    <span class="step-icon"><i data-lucide="sparkles"></i></span>
+                                    <div>
+                                        <h5>2. Talent Search</h5>
+                                        <p>Clubs conduct talent searches, interviews, basic tests, or auditions to
+                                            select members.</p>
+                                    </div>
+                                </div>
+                                <div class="join-step">
+                                    <span class="step-icon"><i data-lucide="award"></i></span>
+                                    <div>
+                                        <h5>3. Inductions</h5>
+                                        <p>Selected freshers join internal channels and start working on tasks and
+                                            fests.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4">Why you should join:</h4>
+                            <ul class="bullet-list text-muted mt-2">
+                                <li><strong>Exposure:</strong> You work with tools, projects, and events you wouldn't
+                                    see in classrooms.</li>
+                                <li><strong>Community:</strong> Seniors and peers who share your interests become a
+                                    support network.</li>
+                                <li><strong>Fun & Balance:</strong> Helps prevent burnout when academics get stressful.
+                                </li>
+                                <li><strong>Leadership:</strong> Organizing events builds soft skills that recruiters
+                                    highly value.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Club Finder Quiz -->
+                <div class="card card-main mt-4" id="club-quiz-container">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Which Club Fits You?</h3>
+
+
+                        <div class="quiz-box mt-4" id="quiz-box">
+                            <div class="quiz-question-slide active" data-question="1">
+                                <h4 class="quiz-question-text">What sounds most exciting to you on a free weekend?</h4>
+                                <div class="quiz-options">
+                                    <button class="btn btn-quiz-option" data-value="building">Building apps, writing
+                                        scripts, or hacking hardware</button>
+                                    <button class="btn btn-quiz-option" data-value="performing">Dancing, singing,
+                                        playing an instrument, or acting</button>
+                                    <button class="btn btn-quiz-option" data-value="organizing">Planning events, public
+                                        speaking, designing posters, or writing articles</button>
+                                    <button class="btn btn-quiz-option" data-value="competing">Playing badminton, chess,
+                                        football, or athletics</button>
+                                    <button class="btn btn-quiz-option" data-value="service">Working on sustainability,
+                                        cleanliness, or campus improvement drives</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-question-slide" data-question="2" style="display: none;">
+                                <h4 class="quiz-question-text">What is your dream role in a major college festival?</h4>
+                                <div class="quiz-options">
+                                    <button class="btn btn-quiz-option" data-value="building">Building the official
+                                        festival website and scoring systems</button>
+                                    <button class="btn btn-quiz-option" data-value="performing">Performing live on stage
+                                        in front of the entire campus</button>
+                                    <button class="btn btn-quiz-option" data-value="organizing">Managing the event
+                                        logistics, budget, and social media coverage</button>
+                                    <button class="btn btn-quiz-option" data-value="competing">Winning the
+                                        inter-collegiate sports championship trophy</button>
+                                    <button class="btn btn-quiz-option" data-value="service">Leading volunteer teams for
+                                        clean, green, and responsible campus initiatives</button>
+                                </div>
+                            </div>
+
+                            <div class="quiz-result-slide" style="display: none;" id="quiz-result">
+                                <div class="result-celebration"><i data-lucide="party-popper"></i></div>
+                                <h4>We found your match!</h4>
+                                <h2 class="result-club-name" id="quiz-result-club">Chakravyuha</h2>
+                                <p class="result-description" id="quiz-result-desc">You are a builder at heart. You will
+                                    love hackathons, solving algorithmic puzzles, and working on engineering projects.
+                                </p>
+                                <p class="quiz-note">Wait wait... this quiz is not the decision-maker. You can still
+                                    explore your new interests and join a club that's entirely new to your style!</p>
+                                <button class="btn btn-secondary mt-3" id="quiz-reset-btn">Retake Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4 — CAMPUS & HOSTEL LIFE -->
+        <section class="section section-alt campus-hostel-section" id="campus-hostel">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04 / Campus & Hostels</span>
+                    <h2 class="section-title">This place slowly starts feeling like home.</h2>
+                    <p class="section-intro">Hostel life takes a little getting used to, but it quickly becomes one of
+                        the most memorable parts of college. Between roommates, late-night conversations, mess food
+                        debates, and shared experiences, you'll build friendships that often last well beyond
+                        graduation.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Daily Schedule -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">Typical Daily Schedule</h3>
+                            <p class="card-desc text-muted">A standard day in the life of a hostel student:</p>
+
+                            <div class="schedule-timeline mt-3">
+                                <div class="schedule-item">
+                                    <span class="time-stamp">07:30 – 08:45</span>
+                                    <div class="schedule-details">
+                                        <h5>Breakfast Menu</h5>
+                                        <p>Fuel up at the mess. Lines are longest around 8:30 AM!</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item highlight-schedule">
+                                    <span class="time-stamp">08:55 – 17:00</span>
+                                    <div class="schedule-details">
+                                        <h5>College Classes & Labs</h5>
+                                        <p>Main academic hours. Don't forget your ID card and laptop.</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time-stamp">17:15 – 18:00</span>
+                                    <div class="schedule-details">
+                                        <h5>Evening Tea & Snacks</h5>
+                                        <p>Tea, snacks, and a short break.</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="time-stamp">19:30 – 21:00</span>
+                                    <div class="schedule-details">
+                                        <h5>Dinner Mess</h5>
+                                        <p>Dinner hours. Hostel attendance and return timings become important after
+                                            this.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mini-callout mt-3">
+                                <h4>Hostel Timings</h4>
+                                <ul class="compact-list mt-2">
+                                    <li>Gates usually open around 6:00 AM, so you can go for a morning walk, run, or
+                                        play your sport before the day starts.</li>
+                                    <li>Students are generally allowed outside the hostel premises only until around
+                                        8:00 PM.</li>
+                                    <li>If you've ordered food or are collecting deliveries, you may be allowed
+                                        additional time, typically until around 8:45 PM.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Interactive Packing Checklist -->
+                    <div class="card card-main col-span-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Hostel Packing Checklist</h3>
+                            <p class="card-desc">Mark off items as you pack them! We'll save your checklist state
+                                automatically so you don't lose progress.</p>
+
+                            <div class="packing-grid mt-3" id="packing-grid">
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-1" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Extension Board / Power Strip</strong>
+                                        <p>Essential. Most rooms have limited sockets. Buy one with surge protection.
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-2" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Durable Water Bottle</strong>
+                                        <p>Keep a flask for cold/hot water. Hydration in summer is key.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-3" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Laundry Bag / Basket</strong>
+                                        <p>For dirty clothes to separate them from clean wardrobe shelf.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-4" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Basic Medicine Kit</strong>
+                                        <p>Paracetamol, cold pills, pain relief sprays, band-aids, ORS packets.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-5" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Bathroom Slippers</strong>
+                                        <p>Necessary for shared or wet bathroom floors.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-6" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Bedding & Pillows</strong>
+                                        <p>Mess beds are bare. Bring pillows, bedsheets, and a light blanket.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-7" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Umbrella</strong>
+                                        <p>For days when you can neither bear the sun nor the rain.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-8" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Important Documents</strong>
+                                        <p>Aadhaar, passport-size photos, admission papers, and ID copies.</p>
+                                    </div>
+                                </label>
+                                <label class="checklist-item">
+                                    <input type="checkbox" id="pack-item-9" class="checklist-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="checklist-text">
+                                        <strong>Stationery Items</strong>
+                                        <p>Notebooks, pens, pencils, sticky notes, and basic classroom supplies.</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <form class="add-checklist-form mt-3" id="add-checklist-form">
+                                <input type="text" id="custom-checklist-input" placeholder="Add your own packing item"
+                                    maxlength="60" aria-label="Add your own packing item">
+                                <button type="submit" class="btn btn-secondary">Add Item</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-3 mt-4">
+                    <!-- Transport and Commute -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">Getting to Campus</h3>
+                            <p class="card-desc">Amrita operates university bus services connecting the campus with
+                                major locations across Vijayawada and Guntur.</p>
+
+                            <h4 class="mt-3">Quick Facts:</h4>
+                            <ul class="compact-list mt-2">
+                                <li>Most buses depart their starting locations around 7:00 AM</li>
+                                <li>Return buses typically leave campus around 5:00 PM</li>
+                                <li>Popular options are available for day scholars from Vijayawada and Guntur</li>
+                                <li>Exact routes and timings may change each semester</li>
+                            </ul>
+
+                            <div class="senior-note-inline mt-3">
+                                <strong>Senior Note:</strong> If you're a day scholar, don't worry too much about
+                                transportation. The university bus network is extensive, and you'll quickly find
+                                students travelling from your area.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hostel Facilities -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">Facilities Available</h3>
+                            <ul class="facility-list mt-3">
+                                <li><i data-lucide="check"></i> Wi-Fi</li>
+                                <li><i data-lucide="check"></i> Laundry Facilities</li>
+                                <li><i data-lucide="check"></i> Study Spaces</li>
+                                <li><i data-lucide="check"></i> Hostel Gym</li>
+                                <li><i data-lucide="check"></i> Recreation Areas</li>
+                            </ul>
+
+                            <div class="mini-callout mt-3">
+                                <strong>Gym Note:</strong> Morning: 5:45 AM–8:00 AM • Evening: 5:00 PM–8:00 PM. A good
+                                option if you want to stay active without affecting academics.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outpasses and Homepasses -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title">Outpasses & Homepasses</h3>
+                            <p class="card-desc">Before you plan a trip home, there are a few rules worth knowing:</p>
+
+                            <ul class="compact-list mt-3">
+                                <li>Apply at least 24 hours in advance</li>
+                                <li>Emergency approvals are uncommon and not guaranteed</li>
+                                <li>Parent approval is required for homepasses and long day-passes</li>
+                                <li>Applications are processed through My Amrita</li>
+                                <li>Specify departure and return details</li>
+                                <li>ID card swipes are required while leaving and returning</li>
+                                <li>Entry and exit times are logged</li>
+                            </ul>
+
+                            <div class="important-note mt-3">
+                                <strong>Important:</strong> Don't wait until the last minute. Pass approvals are much
+                                smoother when applied for in advance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- First Week Survival Tips -->
+                <div class="card card-editorial mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title">First Week Survival Guide</h3>
+                        <ul class="styled-list mt-3">
+                            <li>
+                                <span class="list-icon icon-yellow"><i data-lucide="map"></i></span>
+                                <div><strong>Learn your route to class:</strong> Do a mock walk to your classroom
+                                    building the evening before classes begin to avoid panic at 8:50 AM.</div>
+                            </li>
+                            <li>
+                                <span class="list-icon icon-yellow"><i data-lucide="smile"></i></span>
+                                <div><strong>Sit with different people:</strong> Everyone is looking for friends.
+                                    Sitting with random classmates in Week 1 is the easiest way to break the ice.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="list-icon icon-yellow"><i data-lucide="phone-call"></i></span>
+                                <div><strong>Save important contacts:</strong> Save numbers of the hostel warden,
+                                    security gate, hostel office, and at least two class classmates.</div>
+                            </li>
+                            <li>
+                                <span class="list-icon icon-yellow"><i data-lucide="clock"></i></span>
+                                <div><strong>Fix your sleep schedule:</strong> Mess closes early, and classes start
+                                    at 8:55 AM sharp. Transitioning from late night chats takes time.</div>
+                            </li>
+                            <li>
+                                <span class="list-icon icon-yellow"><i data-lucide="award"></i></span>
+                                <div><strong>Attend orientation properly:</strong> While long, it answers practical
+                                    doubts about portals, exams, and grading.</div>
+                            </li>
+                            <li>
+                                <span class="list-icon icon-yellow"><i data-lucide="heart"></i></span>
+                                <div><strong>Don't isolate yourself:</strong> Keep your room doors slightly open
+                                    when inside during first few days, talk to wing-mates, go down for evening
+                                    snacks.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sticky note: Things nobody tells you -->
+                <div class="handwritten-row mt-4">
+                    <div class="stickynote stickynote-yellow">
+                        <span class="pin"></span>
+                        <p class="handwritten">"Everybody gets lost on campus in the first week. We've all walked into
+                            the wrong block looking for a lab. It is totally normal!"</p>
+                    </div>
+                    <div class="stickynote stickynote-blue">
+                        <span class="pin"></span>
+                        <p class="handwritten">The first month feels confusing. By the time your first internals arrive,
+                            campus will already feel familiar</p>
+                    </div>
+                    <div class="stickynote stickynote-gold">
+                        <span class="pin"></span>
+                        <p class="handwritten">"Everyone adjusts eventually. Give it 3 weeks, and the campus routine
+                            will feel like muscle memory."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5 — SURVIVAL KIT -->
+        <section class="section survival-section" id="survival-kit">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05 / Survival Kit</span>
+                    <h2 class="section-title">Small things that save your semester.</h2>
+                    <p class="section-intro">A curated list of dos, don'ts, mistakes, time management advice, and mental
+                        wellbeing checks straight from seniors who learned them the hard way.</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <!-- DOs -->
+                    <div class="card card-editorial border-green">
+                        <div class="card-body">
+                            <h3 class="card-title text-green"><i data-lucide="check-circle"></i> DOs</h3>
+                            <ul class="styled-list mt-3">
+                                <li>
+                                    <span class="list-icon icon-green"><i data-lucide="check"></i></span>
+                                    <div><strong>Always carry your ID card:</strong> Security won't let you cross the
+                                        main gate, hostels, or mess halls without it.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-green"><i data-lucide="check"></i></span>
+                                    <div><strong>Sleep properly:</strong> All-nighters right before tests rarely work.
+                                        Consistent 6 hours sleep is a cheat code.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-green"><i data-lucide="check"></i></span>
+                                    <div><strong>Submit work early:</strong> Server crashes on assignment submission
+                                        deadlines are real. Upload assignments at least 4 hours before.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-green"><i data-lucide="check"></i></span>
+                                    <div><strong>Ask doubts in labs:</strong> Lab teachers are very helpful if you show
+                                        curiosity. It also leaves a great impression for internal marks.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-green"><i data-lucide="check"></i></span>
+                                    <div><strong>Use calendar tools:</strong> Track test schedules, club recruitment
+                                        deadlines, and events using Google Calendar.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-green"><i data-lucide="check"></i></span>
+                                    <div><strong>Talk to seniors:</strong> We have the notes, the past question papers,
+                                        and the advice on which electives to pick. Don't be shy!</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- DON'Ts -->
+                    <div class="card card-editorial border-red">
+                        <div class="card-body">
+                            <h3 class="card-title text-red"><i data-lucide="x-circle"></i> DON'Ts</h3>
+                            <ul class="styled-list mt-3">
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="x"></i></span>
+                                    <div><strong>Skip classes casually:</strong> Taking a day off feels fun, but bunking
+                                        three classes in a row can drop your attendance below 75% before you know it.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="x"></i></span>
+                                    <div><strong>Compare yourself constantly:</strong> Some classmates will code like
+                                        experts, others will speak flawlessly. Everyone has different paces. Focus on
+                                        your growth.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="x"></i></span>
+                                    <div><strong>Wait until exam week:</strong> The syllabus is huge. Trying to cram 5
+                                        units of Engineering Physics or Calculus the night before is a recipe for
+                                        disaster.</div>
+                                </li>
+                                <li>
+                                    <span class="list-icon icon-red"><i data-lucide="x"></i></span>
+                                    <div><strong>Overcommit to clubs:</strong> Don't join 4 clubs. You'll end up
+                                        neglecting all of them and your CGPA. Join 1 or max 2 active clubs.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-3 mt-4">
+                    <!-- Senior Mistakes -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title text-orange"><i data-lucide="alert-triangle"></i> Mistakes Seniors
+                                Made</h3>
+                            <ul class="bullet-list mt-3 text-muted">
+                                <li><strong>Trying to do everything:</strong> Coding, sports, cultural events, fests,
+                                    and GPA all at once. Pick your battles.</li>
+                                <li><strong>Ignoring attendance early:</strong> Thinking "I'll make up for it later." It
+                                    is very hard to pull attendance back up in the final months.</li>
+                                <li><strong>Not asking for help:</strong> Struggling alone with coding labs or math
+                                    concepts. Teachers and seniors are super approachable if you ask.</li>
+                                <li><strong>Studying only before exams:</strong> Resulted in unnecessary anxiety and bad
+                                    grades. Just 30 mins review daily is enough.</li>
+                                <li><strong>Skipping opportunities:</strong> Not applying to hackathons or fests because
+                                    of fear of failure. Start early!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Time Management Widget -->
+                    <div class="card card-main col-span-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Time Management Guide</h3>
+                            <p class="card-desc">Slide to allocate hours in your typical 24-hour day to see senior
+                                feedback on your balance!</p>
+
+                            <div class="time-slider-container mt-4">
+                                <div class="slider-row">
+                                    <div class="slider-label">
+                                        <span><i data-lucide="book-open"></i> Academics & Self-study</span>
+                                        <strong id="val-academics">6h</strong>
+                                    </div>
+                                    <input type="range" id="slide-academics" class="time-range-slider" min="1" max="12"
+                                        value="6">
+                                </div>
+                                <div class="slider-row mt-3">
+                                    <div class="slider-label">
+                                        <span><i data-lucide="users"></i> Clubs & Projects</span>
+                                        <strong id="val-clubs">3h</strong>
+                                    </div>
+                                    <input type="range" id="slide-clubs" class="time-range-slider" min="0" max="8"
+                                        value="3">
+                                </div>
+                                <div class="slider-row mt-3">
+                                    <div class="slider-label">
+                                        <span><i data-lucide="moon"></i> Sleep & Rest</span>
+                                        <strong id="val-sleep">7h</strong>
+                                    </div>
+                                    <input type="range" id="slide-sleep" class="time-range-slider" min="4" max="10"
+                                        value="7">
+                                </div>
+                            </div>
+
+                            <div class="time-feedback-box mt-4" id="time-feedback-box">
+                                <div class="feedback-indicator text-success">
+                                    <i data-lucide="smile"></i> <strong>Healthy Balance!</strong>
+                                </div>
+                                <p id="time-feedback-text">This layout is highly sustainable. You have enough sleep to
+                                    stay fresh, decent academic focus, and time for extracurriculars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mental Health Card -->
+                <div class="card card-editorial mt-4 bg-warm-light">
+                    <div class="card-body text-center max-w-2xl mx-auto">
+                        <span class="icon-mental"><i data-lucide="heart-handshake"></i></span>
+                        <h3 class="card-title mt-2">A Reminder: Bad weeks happen.</h3>
+                        <p class="card-desc">You might fail a class quiz. You might argue with a roommate. You might
+                            feel incredibly homesick. All of this is part of growing up and living in college.</p>
+                        <div class="note-box mt-3 text-left">
+                            <ul class="bullet-list text-muted">
+                                <li><strong>Take breaks:</strong> Go for a walk around the lake or green fields near the
+                                    campus.</li>
+                                <li><strong>Talk to people:</strong> Don't lock yourself in your room. Reach out to
+                                    friends, wing-mates, or faculty mentors.</li>
+                                <li><strong>Focus on progress over perfection:</strong> A bad internal mark is just one
+                                    quiz. You have plenty of opportunities to recover.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6 — MUST-HAVE TOOLS & RESOURCES -->
+        <section class="section section-alt resources-section" id="resources">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">06 / Resources</span>
+                    <h2 class="section-title">Your academic starter pack.</h2>
+                    <p class="section-intro">Skip the search. Here are the exact platforms, coding tools, note-taking
+                        apps, and college resources you should set up in your first week.</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Learning Resources -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title"><i data-lucide="book-marked" class="icon-inline"></i> Learning</h3>
+                            <ul class="resource-links mt-3">
+                                <li>
+                                    <a href="https://nptel.ac.in/" target="_blank" rel="noopener">NPTEL <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Government platform for engineering courses. Often used for elective assignments
+                                        and syllabus references.</p>
+                                </li>
+                                <li>
+                                    <a href="https://www.geeksforgeeks.org/" target="_blank"
+                                        rel="noopener">GeeksforGeeks <i data-lucide="external-link"></i></a>
+                                    <p>Perfect for understanding core computer science algorithms, theory, and coding
+                                        lab codes.</p>
+                                </li>
+                                <li>
+                                    <a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>The standard platform for practicing coding logic. Vital for DSA preparation.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Coding Tools -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title"><i data-lucide="code-2" class="icon-inline"></i> Development</h3>
+                            <ul class="resource-links mt-3">
+                                <li>
+                                    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>The best code editor. Install it in Week 1. Add extensions for Python, C++, and
+                                        Git.</p>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/" target="_blank" rel="noopener">GitHub <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Host your projects, version control your lab codes, and start building your
+                                        developer profile.</p>
+                                </li>
+                                <li>
+                                    <a href="https://replit.com/" target="_blank" rel="noopener">Replit <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>In-browser code editor. Great for quick coding practice without installing setups
+                                        locally.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Productivity Tools -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title"><i data-lucide="calendar" class="icon-inline"></i> Organization</h3>
+                            <ul class="resource-links mt-3">
+                                <li>
+                                    <a href="https://www.notion.so/" target="_blank" rel="noopener">Notion <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Excellent tool for managing class notes, project sheets, schedules, and club
+                                        works.</p>
+                                </li>
+                                <li>
+                                    <a href="https://keep.google.com/" target="_blank" rel="noopener">Google Keep <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Great for quick, cross-device checklist notes (like mess items or packing items).
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="https://calendar.google.com/" target="_blank" rel="noopener">Google
+                                        Calendar <i data-lucide="external-link"></i></a>
+                                    <p>Mark your internal exam dates, lab schedules, assignment deadlines, and project
+                                        submissions.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-3 mt-4">
+                    <!-- Project tools -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title"><i data-lucide="layout" class="icon-inline"></i> Design & Projects
+                            </h3>
+                            <ul class="resource-links mt-3">
+                                <li>
+                                    <a href="https://www.figma.com/" target="_blank" rel="noopener">Figma <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Industry-standard UI/UX design tool. Perfect for coding projects and hackathon UI
+                                        mocks.</p>
+                                </li>
+                                <li>
+                                    <a href="https://www.canva.com/" target="_blank" rel="noopener">Canva <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Useful for quick presentation slides, club poster designs, and resume formatting.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT / Gemini <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Use it as a learning buddy to explain complex math equations or debugging errors,
+                                        not to copy paste assignments.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Official Campus Portals -->
+                    <div class="card card-editorial">
+                        <div class="card-body">
+                            <h3 class="card-title"><i data-lucide="layout-dashboard" class="icon-inline"></i> College
+                                Portals</h3>
+                            <p class="card-desc">Bookmark these two. You will visit them almost every single day.</p>
+                            <ul class="resource-links mt-3">
+                                <li>
+                                    <a href="https://my.amrita.edu/" target="_blank" rel="noopener">My Amrita Portal <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Your central student dashboard — attendance, fee payments, outpass approvals,
+                                        hostel requests, notifications, and everything admin-related lives here.</p>
+                                </li>
+                                <li>
+                                    <a href="https://aumscn.amrita.edu/cas/login?service=https%3A%2F%2Faumscn.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp"
+                                        target="_blank" rel="noopener">AUMS — Academic Portal <i
+                                            data-lucide="external-link"></i></a>
+                                    <p>Academic records portal — mid-term marks, semester marks, SGPA, CGPA, grades,
+                                        test links, evaluation forms, and course registration.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- DSA Emphasis Box -->
+                    <div class="card card-warning highlight-border">
+                        <div class="card-body dsa-box">
+
+                            <h3>Start DSA from your first year.</h3>
+                            <p class="mt-2 text-muted">Do not study Data Structures and Algorithms (DSA) just for
+                                placement seasons in Year 4.</p>
+                            <p class="mt-2 font-semibold">Study it to build logical thinking.</p>
+                            <p class="mt-2 text-muted font-small">Starting with just one question a day on LeetCode or
+                                GeeksforGeeks makes you incredibly strong by Year 3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="senior-note-inline mt-4">
+                    <strong>Personal Advice:</strong> Don't try to learn everything at once. A strong foundation in one
+                    area will take you much further than jumping between ten different topics.
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">07 / FAQs</span>
+                    <h2 class="section-title">Answering your doubts.</h2>
+                    <p class="section-intro">Common questions asked by incoming freshers, answered honestly by your
+                        seniors.</p>
+                </div>
+
+                <div class="faq-accordion mt-4">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Will I survive the 75% attendance rule?</span>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, absolutely. The secret is to not bunk classes in the first month. Build up a buffer
+                                early. If you maintain 90% attendance in the first six weeks, you have space to take
+                                days off later when you are tired or working on club events.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Will I make friends easily?</span>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Remember, 99% of the freshers are in a new city and know absolutely nobody. Everyone
+                                is eager to make friends. Sit next to random people in the mess or class during Week 1,
+                                ask them where they are from, and you'll find your circle in no time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Should I focus only on my CGPA?</span>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. While CGPA is important (aim for 8.5+ to keep all options open), focusing solely on
+                                books will lead to burnout. Join clubs, participate in developer hackathons, play
+                                sports, and make memories. A 9.5 CGPA with zero social skills or projects is less
+                                valuable than an 8.6 CGPA with strong club work and code portfolio.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What happens if I fail an internal test?</span>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Don't panic. Internals are continuous assessments. If you do badly in Midterms/Internals
+                                1, you can cover it up in Internals 2, assignments, and the final End Sem Exams. Talk to
+                                your faculty mentor, understand your mistakes, and focus on the next assessment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How strict is the hostel outpass system?</span>
+                            <i data-lucide="chevron-down" class="faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It is structured. You need to apply for outpass on the portal in advance. Wardens verify
+                                and approve. Once approved, the gate security scans your ID code. Ensure you keep your
+                                wardens informed if there are urgent travels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUTRO / CALL TO ACTION -->
+        <section class="section outro-section">
+            <div class="container text-center">
+                <h2 class="outro-title">You do not need to become perfect in your first year.</h2>
+                <h3 class="outro-sub">Just stay curious.</h3>
+                <p class="outro-senior">See you around campus :)</p>
+
+                <div class="outro-actions mt-4">
+                    <button class="btn btn-primary btn-large print-btn" id="pdf-download-footer">
+                        <i data-lucide="download"></i> Download Full Guide as PDF
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-compass"><i data-lucide="compass"></i></span>
+                <strong>Campus Compass</strong>
+            </div>
+            <div class="footer-credits">
+                <p>Built by your seniors at <strong>Chakravyuha Club</strong>.</p>
+                <p class="font-small text-muted">&copy; 2026 Amrita Amaravati Freshers Portal. Student Initiative.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
