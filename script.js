@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconLight = themeToggleBtn.querySelector('.icon-light');
 
     // Retrieve saved theme preference or use system default
-    const savedTheme = localStorage.getItem('theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const savedTheme = localStorage.getItem('theme') || 'light';
 
     // Apply initial theme
     setTheme(savedTheme);
